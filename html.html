@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+
+    <title>MelnaisDžeks</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" type="text/css" href="css.css" media=”screen” />
+
+ </head>
+ <body>
+    <div id="wrapper">
+        <div id="game">
+          <div id="alert" class="alert alert-error hide"><span></span></div>
+          <div id="dealer">
+            <div id="dhand"></div>
+          </div>
+          <div id="player">
+            <div id="phand"></div>
+          </div>
+          <div id="money">
+            <span id="cash">Nauda: $<span></span></span>
+            <div id="bank">Laimests: $<span></span></div>
+          </div>
+        </div>
+        <div id="actions">
+          <button id="deal" class="btn">Darījums!</button>
+          <button id="hit" class="btn" disabled>Sist!</button>
+          <button id="stand" class="btn" disabled>Stāvēt!</button>
+          <button id="double" class="btn" disabled>Dubultot lejā!</button>
+          <button id="split" class="btn" disabled>Sadalīt!</button>
+          <button id="insurance" class="btn" disabled>Apdrošināt likmi!</button>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <strong>Derības!</strong> $<input id="wager" class="input-small" type="text" />
+        </div>
+      </div>
+      <div id="myModal" class="modal hide fade">
+        <div class="modal-header">
+          
+          <h3>Tev beidzās nauda!</h3>
+        </div>
+        <div class="modal-body">
+          <p>Jums beidzās skaidra nauda, bet jūs pamanāt tuvumā bankomātu. Vai vēlaties izņemt vēl 1000$ un mēģināt vēlreiz?</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" id="cancel" class="btn">Nē!</a>
+          <a href="#" id="newGame" class="btn btn-primary">Jā!</a>
+        </div>
+      </div>
+ </body>
+ </html>
+
+
