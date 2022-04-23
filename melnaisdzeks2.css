@@ -1,0 +1,198 @@
+
+body {
+    font-size: 25px;
+    margin: 0px;
+    background-color: antiquewhite;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 600px;
+    box-shadow: 0px 0px 9px blueviolet;
+    border: 2px solid black;
+    display: table;
+    padding: 8px 8px 8px 8px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 12px;
+}
+
+th {
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    font-size: 18px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 9px blueviolet;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+button#play {
+    background-color: antiquewhite;
+    width: 140px;
+}
+
+button#hit {
+    background-color: #90EE90;
+    width: 70px;
+    align-items: center;
+}
+
+button#stay {
+    background-color: #FF6961;
+    width: 70px;
+    align-items: center;
+}
+
+#tracker {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 0px 9px blueviolet;
+    height: 17px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+.trackertext {
+    font-size: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.button {
+    width: 100%;
+    text-align: center;
+}
+
+div.textupdates {
+    width: auto;
+    height: 80px;
+    background-color: antiquewhite;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0px 0px 9px blueviolet;
+    border: 2px solid black;
+    padding: 4px 4px 4px 4px;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.boldrc {
+    color: red;
+    font-weight: bold;
+}
+
+.boldbc {
+    color: black;
+    font-weight: bold;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 7;
+    padding-top: 4px;
+    margin-left: 8px;
+    margin: 0px;
+    padding: 0px;   
+}
+
+.logotext {
+    font-size: 70px;
+    width: 430px;
+    font-weight: bold;
+    font-family: "Oswald",sans-serif;
+    letter-spacing: -3px;
+    color: black;
+    position: absolute;
+    top: 43px;
+    left: 156px;
+    z-index: 6;
+    padding-top: 7px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 9px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 9px blueviolet;
+}
+
+
+.chip {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+#js-chip1 {
+    background-color: #ffffff;
+}
+
+#js-chip2 {
+    background-color: pink;
+}
+
+#js-chip3 {
+    background-color: red;
+}
+
+#js-chip4 {
+    background-color: blue;
+}
+
+#js-chip5 {
+    background-color: gray;
+    color: white;
+}
+
+#js-chip6 {
+    background-color: green;
+}
+
+#js-chip7 {
+    background-color: orange;
+}
+
+#js-chip8 {
+    background-color: black;
+    color: white;
+}
+
+#js-chip9 {
+    background-color: purple;
+}
+
+#js-chip10 {
+    background-color: yellow;
+}
+
+#js-chip11 {
+    background-color: brown;
+    color: white;
+}
+
+
+

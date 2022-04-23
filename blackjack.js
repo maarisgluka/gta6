@@ -17,7 +17,7 @@ jsbApp.choice = document.getElementById('choice');
 jsbApp.playerHand = [];
 jsbApp.dealerHand = [];
 jsbApp.deck = [];
-jsbApp.suits = ['kreičiem <span class="bold">&#9827</span>', 'karāviem <span class="redcard">&#9830</span>', 'erceniem <span class="redcard">&#9829</span>', 'pīķiem <span class="bold">&#9824</span>'];
+jsbApp.suits = ['<span class="bold">&#9827</span>', '<span class="boldrc">&#9830</span>', '<span class="boldrc">&#9829</span>', '<span class="bold">&#9824</span>'];
 jsbApp.values = ["Dūzis", "Divi", "Trīs", "Četri", "Pieci", "Seši", "Septiņi", "Astoņi", "Deviņi", "Desmit", "Kalps", "Dāma", "Kungs"];
 jsbApp.gameStatus = 0;
 jsbApp.wins = 0; 
@@ -96,11 +96,11 @@ var createDeck = function () {
                 cardValue = 10;
             }
             if (cardValue != 1) {
-                cardTitle += (jsbApp.values[b] + " no " + jsbApp.suits[a] + " (" + cardValue + ")");
+                cardTitle += (jsbApp.values[b] + "  " + jsbApp.suits[a] + " (" + cardValue + ")");
             }
             else
             {
-                cardTitle += (jsbApp.values[b] + " no " + jsbApp.suits[a] + " (" + cardValue + " or 11)");
+                cardTitle += (jsbApp.values[b] + "  " + jsbApp.suits[a] + " (" + cardValue + " or 11)");
             }
             var newCard = new card(jsbApp.suits[a], cardValue, cardTitle);
             deck.push(newCard);
@@ -337,7 +337,7 @@ var bust = function () {
     var dealerTotal = handTotal(jsbApp.dealerHand);
     if (playerTotal > 21)
     {
-        explanation = "Tu pakāsi ar" + playerTotal + ".";
+        explanation = "Tu pakāsi ar " + playerTotal + ".";
     }
     jsbApp.textUpdates.innerHTML = "Tu pakāsi.<br>" + explanation + "<br>Spied 'Jauna spēle', lai spēlētu vēlreiz.";
     track();
@@ -355,7 +355,7 @@ var tie = function () {
 
 
 var track = function () {
-    jsbApp.tracker.innerHTML = "<p>Uzvaras: " + jsbApp.wins + " Neizķirti: " + jsbApp.draws + " Zaudes: " + jsbApp.losses + "</p>";
+    jsbApp.tracker.innerHTML = "<text>Uzvaras: " + jsbApp.wins + " Neizķirti: " + jsbApp.draws + " Zaudes: " + jsbApp.losses + "</text>";
     jsbApp.newgame.classList.remove("hidden");
     jsbApp.buttonBox.classList.add("hidden");
 }
@@ -398,27 +398,27 @@ var advise = function () {
 
     if (playerTotal <= 11 && !soft)
     {
-        jsbApp.choice.innerHTML = "[Sit!]";
+        jsbApp.choice.innerHTML = "";
     }
     else if (playerTotal >= 12 && playerTotal <= 16 && dealerUp <= 6 && !soft)
     {
-        jsbApp.choice.innerHTML = "[Paliec!]";
+        jsbApp.choice.innerHTML = "";
     }
     else if (playerTotal >= 12 && playerTotal <= 16 && dealerUp >= 7 && !soft)
     {
-        jsbApp.choice.innerHTML = "[Sit!]";
+        jsbApp.choice.innerHTML = "";
     }
     else if (playerTotal >= 17 && playerTotal <= 21 && !soft)
     {
-        jsbApp.choice.innerHTML = "[Paliec!]";
+        jsbApp.choice.innerHTML = "";
     }
     else if (playerTotal >= 12 && playerTotal <= 18 && soft)
     {
-        jsbApp.choice.innerHTML = "[Sit!]";
+        jsbApp.choice.innerHTML = "";
     }
     else if (playerTotal >= 19 && playerTotal <= 21 && soft)
     {
-        jsbApp.choice.innerHTML = "[Paliec!]";
+        jsbApp.choice.innerHTML = "";
     }
     else
     {
