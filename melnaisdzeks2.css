@@ -1,5 +1,7 @@
+
 html {
     zoom: 100%;
+
 }
 
 body {
@@ -39,6 +41,7 @@ button {
     padding: 10px;
     border: 2px solid black;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 button#play {
@@ -151,16 +154,19 @@ div.textupdates {
     box-shadow: 0px 0px 9px blueviolet;
 }
 
-
 .chip {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin-left: 30px;
+    border: 7px dashed #1D1C1A;
+    font-family: 'PatuaOne';
+    font-size: 18px;
 }
 
 #js-chip1 {
     background-color: #FAF8F6;
+
 }
 
 #js-chip2 {
@@ -189,6 +195,7 @@ div.textupdates {
 
 #js-chip8 {
     background-color: #1D1C1A;
+    border: 7px dashed #FAF8F6;
     color: white;
 }
 
@@ -203,6 +210,5 @@ div.textupdates {
 #js-chip11 {
     background-color: #B1907F;
 }
-
 
 
