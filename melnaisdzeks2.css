@@ -1,3 +1,6 @@
+html {
+    zoom: 100%;
+}
 
 body {
     font-size: 25px;
@@ -32,7 +35,7 @@ button {
     font-size: 18px;
     background-color: antiquewhite;
     box-shadow: 0px 0px 9px blueviolet;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     padding: 10px;
     border: 2px solid black;
     border-radius: 12px;
@@ -53,6 +56,15 @@ button#stay {
     background-color: #FF6961;
     width: 70px;
     align-items: center;
+}
+
+button#clearbtn {
+    margin-left: 10px;
+}
+
+#nauda {
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 #tracker {
@@ -148,50 +160,48 @@ div.textupdates {
 }
 
 #js-chip1 {
-    background-color: #ffffff;
+    background-color: #FAF8F6;
 }
 
 #js-chip2 {
-    background-color: pink;
+    background-color: #F8C8DC;
 }
 
 #js-chip3 {
-    background-color: red;
+    background-color: #FF6961;
 }
 
 #js-chip4 {
-    background-color: blue;
+    background-color: #89cff0;
 }
 
 #js-chip5 {
-    background-color: gray;
-    color: white;
+    background-color: #CFCFC4;
 }
 
 #js-chip6 {
-    background-color: green;
+    background-color: #90EE90;
 }
 
 #js-chip7 {
-    background-color: orange;
+    background-color: #FAC898;
 }
 
 #js-chip8 {
-    background-color: black;
+    background-color: #1D1C1A;
     color: white;
 }
 
 #js-chip9 {
-    background-color: purple;
+    background-color: #966fd6;
 }
 
 #js-chip10 {
-    background-color: yellow;
+    background-color: #FDFD96;
 }
 
 #js-chip11 {
-    background-color: brown;
-    color: white;
+    background-color: #B1907F;
 }
 
 

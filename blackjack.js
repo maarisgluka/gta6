@@ -1,3 +1,22 @@
+summa = 1000
+document.getElementById('summa').innerHTML = summa
+
+likme = 0
+document.getElementById('likme').innerHTML = likme
+
+function add (num) {
+    likme += num;
+    summa -= num
+    document.getElementById('likme').innerHTML = likme
+    document.getElementById('summa').innerHTML = summa
+}
+
+function reset () {
+    summa = summa + likme
+    likme = 0
+    document.getElementById('likme').innerHTML = likme
+    document.getElementById('summa').innerHTML = summa
+}
 
 var jsbApp = {};
 
@@ -306,6 +325,10 @@ jsbApp.stayButton.addEventListener("click", function stayLoop() {
 });
 
 var victory = function () {
+    summa = summa + likme * 2;
+    likme = 0;
+    document.getElementById('likme').innerHTML = likme;
+    document.getElementById('summa').innerHTML = summa;
     jsbApp.wins += 1;
     jsbApp.games += 1;
     var explanation = "";
@@ -329,6 +352,8 @@ var victory = function () {
 }
 
 var bust = function () {
+    likme = 0;
+    document.getElementById('likme').innerHTML = likme;
     jsbApp.games += 1;
     jsbApp.losses += 1;
     var explanation = "";
@@ -343,7 +368,8 @@ var bust = function () {
     track();
 }
 
-var tie = function () {    
+var tie = function () {
+    reset();
     jsbApp.games += 1;
     jsbApp.draws += 1;
     var explanation = "";
