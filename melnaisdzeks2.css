@@ -159,9 +159,24 @@ div.textupdates {
     height: 70px;
     border-radius: 50%;
     margin-left: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border: 7px dashed #1D1C1A;
     font-family: 'PatuaOne';
+    font-weight: bold;
     font-size: 18px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.chip:hover {
+    width: 80px;
+    height: 80px;
+    margin-left: 25px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: rotate(360deg);
 }
 
 #js-chip1 {

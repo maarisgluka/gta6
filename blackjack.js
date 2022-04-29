@@ -1,3 +1,7 @@
+$.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
+
 summa = 1000
 document.getElementById('summa').innerHTML = summa
 
@@ -5,10 +9,13 @@ likme = 0
 document.getElementById('likme').innerHTML = likme
 
 function add (num) {
-    likme += num;
-    summa -= num
-    document.getElementById('likme').innerHTML = likme
-    document.getElementById('summa').innerHTML = summa
+    if (summa >= num) {
+        likme += num;
+        summa -= num
+        document.getElementById('likme').innerHTML = likme
+        document.getElementById('summa').innerHTML = summa
+    }
+    
 }
 
 function reset () {
@@ -53,13 +60,16 @@ function card(suit, value, name) {
 
 var newGame = function () {
 
-    jsbApp.newgame.classList.add("hidden");
+    if (likme > 0) {
+        jsbApp.newgame.classList.add("hidden");
      
     jsbApp.dcards.innerHTML = "";
     jsbApp.dcards.innerHTML = "";
     jsbApp.playerHand = [];
     jsbApp.dealerHand = [];
     jsbApp.gameStatus = 0;
+
+    
 
 
     jsbApp.deck = createDeck();
@@ -102,8 +112,13 @@ var newGame = function () {
     jsbApp.buttonBox.classList.remove("hidden");
     jsbApp.textUpdates.innerHTML = "Rokas tika izdalītas!";
     
-};
+    }
 
+    else {
+        alert('UZLIEC LIKMI!')
+    }
+}
+    
 var createDeck = function () {
     var deck = [];
 
@@ -132,7 +147,6 @@ var createDeck = function () {
 
     return deck;
 };
-
 
 var drawHands = function () {    
     var htmlswap = "";
