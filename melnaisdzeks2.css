@@ -1,7 +1,12 @@
 
+@font-face {
+    font-family: Comfortaa;
+    src: url(FONTS/Comfortaa-VariableFont_wght.ttf);
+}
+
 html {
     zoom: 100%;
-
+    font-family: Comfortaa;
 }
 
 body {
@@ -163,9 +168,9 @@ div.textupdates {
     margin-top: 5px;
     margin-bottom: 5px;
     border: 7px dashed #1D1C1A;
-    font-family: 'PatuaOne';
+    font-family: Comfortaa;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     transition: transform 0.1s ease-in-out;
 }
 
