@@ -128,8 +128,8 @@ div.textupdates {
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     display: grid;
     place-items: center;
     position: relative;
@@ -142,14 +142,13 @@ div.textupdates {
 
 .logotext {
     font-size: 70px;
-    width: 430px;
+    width: 323px;
     font-weight: bold;
     font-family: "Oswald",sans-serif;
     letter-spacing: -3px;
     color: black;
     position: absolute;
-    top: 43px;
-    left: 156px;
+    left: 220px;
     z-index: 6;
     padding-top: 7px;
     margin: 0px;
@@ -168,9 +167,8 @@ div.textupdates {
     margin-top: 5px;
     margin-bottom: 5px;
     border: 7px dashed #1D1C1A;
-    font-family: Comfortaa;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     transition: transform 0.1s ease-in-out;
 }
 
